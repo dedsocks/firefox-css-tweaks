@@ -1,0 +1,43 @@
+/*urlbar congiguration*/
+#back-button,
+#forward-button {
+  display: none !important;
+}
+
+.titlebar-buttonbox-container {
+  display: none !important;
+}
+
+#urlbar[focused="true"] .urlbar-background,
+#urlbar:focus-within .urlbar-background {
+  --toolbar-field-focus-border-color: transparent !important;
+  --focus-outline-color: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+
+  backdrop-filter: blur(80px) !important;
+  background-color: rgba(30, 30, 30, 0.85) !important;
+}
+
+.urlbarView {
+  animation: dropdownFade 0.35s ease !important;
+}
+
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#urlbar {
+  transition: top 1.85s ease !important;
+}
+
+#urlbar[breakout][breakout-extend] {
+  top: var(--urlbar-padding-block) !important;
+}
