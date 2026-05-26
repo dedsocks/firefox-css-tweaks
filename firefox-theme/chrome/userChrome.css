@@ -41,3 +41,19 @@
 #urlbar[breakout][breakout-extend] {
   top: var(--urlbar-padding-block) !important;
 }
+
+#sidebar-main {
+  width: 53px !important;
+}
+
+#sidebar-main .toolbarbutton-text,
+#sidebar-main .tab-label,
+#sidebar-main .tools-overflow,
+#sidebar-main button,
+#sidebar-main .tab-close-button {
+  display: none !important;
+}
+
+#sidebar-tools-and-extensions-splitter {
+  display: none !important;
+}
