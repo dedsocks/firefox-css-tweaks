@@ -38,9 +38,6 @@
   transition: top 1.85s ease !important;
 }
 
-#urlbar[breakout][breakout-extend] {
-  top: var(--urlbar-padding-block) !important;
-}
 
 /*Sidebar Configuration*/
 #sidebar-main {
@@ -63,4 +60,48 @@
   visibility: collapse !important; 
 }
 
+/*Hide Toolbar Configuration*/
+/*Default Behavior*/
+#nav-bar {
+  opacity: 0;
+  height: 0 !important;
+  min-height: 0 !important;
+  overflow: hidden;
+  transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+#urlbar-container,
+#urlbar {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/*Urlbar Focused Behavior*/
+#nav-bar:focus-within {
+  opacity: 1;
+  height: var(--navbar-height) !important;
+  min-height: 28px !important; /*For future update variable name changes,
+  And to prevent toolbar from collapsing because the url bar breaks out 
+  from the toolbar leaving the toolbar empty and enables it to collapse*/
+  overflow: visible;
+}
+
+#nav-bar:focus-within #urlbar-container,
+#nav-bar:focus-within #urlbar {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+#urlbar[breakout] {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+#urlbar[breakout][breakout-extend] {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  top: var(--urlbar-padding-block) !important;
+}
