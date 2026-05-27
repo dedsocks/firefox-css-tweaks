@@ -2,9 +2,7 @@
 
 This configuration hides browser clutter, optimizes the sidebar to only show favicons and enables toggling of toolbar when url bar is focused.
 
-<div align="center">
-  <video src="assets/demo.mp4" width="100%" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"></video>
-</div>
+![](./assets/demo.mp4)
 
 ---
 
