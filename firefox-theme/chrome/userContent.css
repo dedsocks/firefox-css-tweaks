@@ -1,8 +1,5 @@
 @-moz-document url("about:newtab"), url("about:home") {
     #main-button,
-    .personalize-button,
-    button[title="Customize"],
-    .icon-pencil,
     .logo {
         display: none !important;
     }
@@ -10,4 +7,12 @@
     .logo-and-wordmark .wordmark {
     display: inline-block !important;
   }
+
+    @media (max-height: 670px), (max-width: 470px) {
+            .logo-and-wordmark {
+            display: flex !important;
+        }
+    }
 }
+
+
