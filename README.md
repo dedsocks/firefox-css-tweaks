@@ -2,9 +2,7 @@
 
 This configuration hides browser clutter, optimizes the sidebar to only show favicons and enables toggling of toolbar when url bar is focused.
 
-![](./assets/demo.mp4)
-
----
+https://github.com/user-attachments/assets/8cf17cd2-cf92-4257-86ce-37ec68f2229c
 
 ## Features
 
