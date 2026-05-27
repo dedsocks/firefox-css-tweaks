@@ -1,4 +1,4 @@
-/*urlbar congiguration*/
+/*Urlbar Congiguration*/
 #back-button,
 #forward-button {
   display: none !important;
@@ -42,6 +42,7 @@
   top: var(--urlbar-padding-block) !important;
 }
 
+/*Sidebar Configuration*/
 #sidebar-main {
   width: 53px !important;
 }
@@ -57,3 +58,9 @@
 #sidebar-tools-and-extensions-splitter {
   display: none !important;
 }
+
+#main-button {
+  visibility: collapse !important; 
+}
+
+
