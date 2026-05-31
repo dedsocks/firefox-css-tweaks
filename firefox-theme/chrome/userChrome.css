@@ -82,7 +82,7 @@
 #nav-bar:focus-within {
   opacity: 1;
   height: var(--navbar-height) !important;
-  min-height: 28px !important; /*For future update variable name changes,
+  min-height: 40px !important; /*For future update variable name changes,
   And to prevent toolbar from collapsing because the url bar breaks out 
   from the toolbar leaving the toolbar empty and enables it to collapse*/
   overflow: visible;
