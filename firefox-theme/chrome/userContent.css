@@ -1,18 +1,22 @@
 @-moz-document url("about:newtab"), url("about:home") {
-    #main-button,
-    .logo {
+    #main-button {
         display: none !important;
     }
 
-    .logo-and-wordmark .wordmark {
-    display: inline-block !important;
-  }
+    body {
+        overflow: hidden !important;
+    }
 
-    @media (max-height: 670px), (max-width: 470px) {
-            .logo-and-wordmark {
-            display: flex !important;
-        }
+    body::before {
+        content: "FIREFOX";
+        white-space: pre-wrap;
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 130px;
+        color: #a6a6a6;
+        font-family: monospace;
+        letter-spacing: 2px;
+        font-weight: 900;
     }
 }
-
-
